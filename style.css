@@ -16,6 +16,7 @@ nav {
   margin-bottom: 20px;
   display: flex;
   padding: 10px;
+  border-radius: 36px;
 }
 h1 {
   display: flex;
@@ -40,6 +41,7 @@ a {
 main {
   background: rgb(241, 147, 175);
   display: flex;
+  border-radius: 20px;
 }
 .sidebar {
   margin-right: 25px;
@@ -47,6 +49,7 @@ main {
 }
 .sidebar-img {
   width: 200px;
+  border: 5px solid #ffffff;
 }
 .content {
   flex: 1;
@@ -61,4 +64,29 @@ main {
 h2,
 h3 {
   margin: 0px;
+}
+/* portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #c1bbf2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #ffffff;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
 }
