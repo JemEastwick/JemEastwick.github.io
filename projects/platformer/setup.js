@@ -91,10 +91,13 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
-  kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  database: { image: "https://piskel-imgstore-b.appspot.com/img/c143cbdc-6c59-11ef-8634-1b7edbd14bf2.gif" },
+  diamond: { image: "https://piskel-imgstore-b.appspot.com/img/c143cbdc-6c59-11ef-8634-1b7edbd14bf2.gif" },
+  grace: { image: "https://piskel-imgstore-b.appspot.com/img/c143cbdc-6c59-11ef-8634-1b7edbd14bf2.gif" },
+  kennedi: { image: "https://piskel-imgstore-b.appspot.com/img/c143cbdc-6c59-11ef-8634-1b7edbd14bf2.gif" },
+  max: { image: "https://piskel-imgstore-b.appspot.com/img/c143cbdc-6c59-11ef-8634-1b7edbd14bf2.gif" },
+  steve: {
+    image:
+      "https://piskel-imgstore-b.appspot.com/img/c143cbdc-6c59-11ef-8634-1b7edbd14bf2.gif",
+  },
 };
