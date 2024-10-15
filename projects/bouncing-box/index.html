@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(250, 139, 183);
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -21,6 +21,7 @@
 
       .board {
         height: 100vh;
+        background-color: rgb(139, 174, 250);
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -59,6 +60,11 @@
           box.text(newText);
         }
 
+        function getRandomColor(colorStr)
+        {
+          box.css("background-color", colorStr);
+        }
+
         //////////////////////////////////////////////////////////////////
         /////////////////// YOUR CODE BELOW HERE /////////////////////////
         //////////////////////////////////////////////////////////////////
@@ -67,6 +73,11 @@
         var positionX = 0;
         var points = 0;
         var speed = 10;
+        //var randNum = 0;
+        var red = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var colorBox = "rgb(red, 25, 250)";
 
         /* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -76,12 +87,20 @@
         function update() {
           positionX = positionX + speed;
           moveBoxTo(positionX);
-          if (positionX > boardWidth) 
-		  {
+          //if (positionX == 0)
+          //{
+          //randNum = Math.random() * 100;
+          //positionX = randNum;
+          //}
+          //if (positionX == boardWidth)
+          //{
+          //randNum = Math.random() * 100;
+          //positionX = randNum;
+          //}
+          if (positionX > boardWidth) {
             speed = speed * -1;
           }
-          if (positionX < 0) 
-		  {
+          if (positionX < 0) {
             speed = speed * -1;
           }
         }
@@ -95,14 +114,12 @@
           positionX = 0;
           points = points + 1;
           changeBoxText(points);
-          if (speed >= 0)
-		  {
-			speed = speed + 3;
-		  }
-		  else if (speed < 0)
-		  {
-			speed = speed - 3;
-		  }
+          if (speed >= 0) {
+            speed = speed + 3;
+          } else if (speed < 0) {
+            speed = speed - 3;
+          }
+          getRandomColor(colorBox);
         }
       })();
     </script>
