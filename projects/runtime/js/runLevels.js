@@ -36,6 +36,18 @@ var runLevels = function (window) {
     createSawBlade(700, 225);
     createSawBlade(400, 200);
     createSawBlade(900, 200);
+    createSawBlade(200, 250);
+    createSawBlade(700, 225);
+    createSawBlade(400, 200);
+    createSawBlade(900, 200);
+    createSawBlade(200, 250);
+    createSawBlade(700, 225);
+    createSawBlade(400, 200);
+    createSawBlade(900, 200);
+    createSawBlade(200, 250);
+    createSawBlade(700, 225);
+    createSawBlade(400, 200);
+    createSawBlade(900, 200);
 
     function createEnemy(x, y)
     {
@@ -55,15 +67,31 @@ var runLevels = function (window) {
       }
   
       enemy.onProjectileCollision = function (){
-        game.increaseScore(20);
+        game.increaseScore(80);
         enemy.fadeOut();
       }
     }
 
     createEnemy (400, groundY - 10);
     createEnemy (800, groundY - 100);
-    createEnemy (1200, groundY - 50)
-
+    createEnemy (200, groundY - 50);
+    createEnemy (400, groundY - 10);
+    createEnemy (800, groundY - 100);
+    createEnemy (200, groundY - 50);
+    createEnemy (400, groundY - 10);
+    createEnemy (800, groundY - 100);
+    createEnemy (200, groundY - 50);
+    createEnemy (400, groundY - 10);
+    createEnemy (800, groundY - 100);
+    createEnemy (200, groundY - 50);
+    createEnemy (400, groundY - 10);
+    createEnemy (800, groundY - 100);
+    createEnemy (200, groundY - 50);
+    createEnemy (400, groundY - 10);
+    createEnemy (800, groundY - 100);
+    createEnemy (200, groundY - 50);
+    createEnemy (400, groundY - 10);
+    createEnemy (800, groundY - 100);
 
     function startLevel() {
       // TODO 13 goes below here
